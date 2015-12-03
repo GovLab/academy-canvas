@@ -1,3 +1,22 @@
+function addQuerystringToURL(url, queryArgs) {
+    queryArgs = queryArgs || {};
+
+    if (getQuery('lang')) {
+        queryArgs.lang = getQuery('lang');
+    }
+    if (getQuery('firebase')) {
+        queryArgs.firebase = getQuery('firebase');
+    }
+
+    var queryString = Object.keys(queryArgs).map(function(key) {
+        return key + '=' + encodeURIComponent(queryArgs[key]);
+    }).join('&');
+
+    if (queryString) url += '?' + queryString;
+
+    return url;
+}
+
 $(function() {
     var db = null,
         template = Handlebars.compile($('#handlebars-template').html()),
@@ -5,17 +24,13 @@ $(function() {
 
     $('body').html(template(language));
 
-    if (location.hostname == 'govlabacademy.org') {
-        if (location.pathname == '/canvas/') {
-            db = new Firebase('https://lean-canvas.firebaseio.com/');
+    var firebase = getQuery('firebase') || 'lean-canvas';
 
-        } else if (location.pathname == '/public-canvas/') {
-            db = new Firebase('https://lean-canvas-public.firebaseio.com/');
-        }
-
-    } else {
-        db = new Firebase('https://lean-canvas-dev.firebaseio.com/');
+    if (!/^[A-Za-z0-9\-]+$/.test(firebase)) {
+        throw new Error("INVALID FIREBASE: " + firebase);
     }
+
+    db = new Firebase('https://' + firebase + '.firebaseio.com/');
 
     state0(db);
 
@@ -384,9 +399,7 @@ function reset_all() {
         $('.b-project-list-items').isotope('destroy');
     }
 
-    if (getQuery('lang')) {
-        url += '?lang=' + getQuery('lang');
-    }
+    url = addQuerystringToURL(url);
 
     history.replaceState(null, null, url);
 }
@@ -476,7 +489,7 @@ function state2(db, id, object) {
             $('#canvas-' + item + '-md').html(markdown.toHTML(obj[item]));
         }
 
-        var url = location.pathname + '?canvas=' + id;
+        var url = location.pathname;
 
         set_data('ux');
         set_data('foes');
@@ -532,9 +545,7 @@ function state2(db, id, object) {
             }
         });
 
-        if (getQuery('lang')) {
-            url += '&lang=' + getQuery('lang');
-        }
+        url = addQuerystringToURL(url, {canvas: id});
 
         history.pushState(null, null, url);
 
