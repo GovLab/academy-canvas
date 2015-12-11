@@ -719,6 +719,18 @@ p,
     font-size: 1.5rem;
     text-align: center;
     font-weight: 300; }
+  .b-canvas-title .e-course-canvas {
+    display: block;
+    position: absolute;
+    line-height: 1;
+    padding: 12px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    width: calc(100% - 30px); }
+    .b-canvas-title .e-course-canvas input[type="checkbox"] {
+      margin: 0;
+      margin-right: 20px; }
 
 .b-canvas-description {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
