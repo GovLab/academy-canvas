@@ -435,7 +435,7 @@ function state1(db) {
                 $span.addClass('locked');
             }
 
-            for(var i = 2, cat = ''; i <= 16; i++) {
+            for(var i = 2, cat = ''; i <= 17; i++) {
                 cat = 'filters_' + i;
 
                 if (language[cat] == obj.category) {
