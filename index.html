@@ -35,11 +35,11 @@
           <span class="e-menu-item e-language">{{ language_0 }}</span>
           <ul class="b-languages-links m-display-none">
             <li class="en">{{ language_1 }}</li>
-            <li class="es">{{ language_2 }}</li>
+            <!-- <li class="es">{{ language_2 }}</li>
             <li class="nl">{{ language_3 }}</li>
             <li class="fr">{{ language_4 }}</li>
             <li class="de">{{ language_5 }}</li>
-            <li class="it">{{ language_6 }}</li>
+            <li class="it">{{ language_6 }}</li> -->
           </ul>
         </div>
 
@@ -186,20 +186,32 @@
               <div class="e-canvas-col">
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
-                  <h3 style="letter-spacing: -0.1px;">{{ impacted_1 }}</h3>
-                  <h4>{{ impacted_2 }}</h4>
+                  <h3 style="letter-spacing: -0.1px;">{{ problem_1_1  }}</h3>
+                  <h4>{{ problem_1_2  }}</h4>
                   <textarea id="canvas-impacted" class="e-canvas-content m-display-none" name="impacted"></textarea>
                   <div id="canvas-impacted-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-impacted-comments" class="e-canvas-comment m-display-none" name="impacted_comments" placeholder="{{ comments }}"></textarea>
                   <div id="canvas-impacted-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
                 </div>
               </div>
-
+            </div>
+              <div class="e-canvas-line">
               <div class="e-canvas-col">
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
                   <h3>{{ causes_1 }}</h3>
                   <h4>{{ causes_2 }}</h4>
+                  <textarea id="canvas-causes" class="e-canvas-content m-display-none" name="causes"></textarea>
+                  <div id="canvas-causes-md" class="e-canvas-content-md"></div>
+                  <textarea id="canvas-causes-comments" class="e-canvas-comment m-display-none" name="causes_comments" placeholder="{{ comments }}"></textarea>
+                  <div id="canvas-causes-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
+                </div>
+              </div>
+              <div class="e-canvas-col">
+                <div class="e-canvas-section">
+                  <i class="fa fa-comment e-add-comment"></i>
+                  <h3>{{ impacted_1 }}</h3>
+                  <h4>{{ impacted_2 }}</h4>
                   <textarea id="canvas-causes" class="e-canvas-content m-display-none" name="causes"></textarea>
                   <div id="canvas-causes-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-causes-comments" class="e-canvas-comment m-display-none" name="causes_comments" placeholder="{{ comments }}"></textarea>
@@ -215,7 +227,42 @@
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
                   <h3>{{ evidence_1 }}</h3>
-                  <h4>{{ evidence_2 }}</h4>
+                  <h4>{{ evidence_1_1 }}</h4>
+                  <textarea id="canvas-evidence" class="e-canvas-content m-display-none" name="evidence"></textarea>
+                  <div id="canvas-evidence-md" class="e-canvas-content-md"></div>
+                  <textarea id="canvas-evidence-comments" class="e-canvas-comment m-display-none" name="evidence_comments" placeholder="{{ comments }}"></textarea>
+                  <div id="canvas-evidence-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
+                </div>
+              </div>
+              <div class="e-canvas-col">
+                <div class="e-canvas-section">
+                  <i class="fa fa-comment e-add-comment"></i>
+                  <h3>{{ evidence_2 }}</h3>
+                  <h4>{{ evidence_2_1 }}</h4>
+                  <textarea id="canvas-evidence" class="e-canvas-content m-display-none" name="evidence"></textarea>
+                  <div id="canvas-evidence-md" class="e-canvas-content-md"></div>
+                  <textarea id="canvas-evidence-comments" class="e-canvas-comment m-display-none" name="evidence_comments" placeholder="{{ comments }}"></textarea>
+                  <div id="canvas-evidence-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="e-canvas-line">
+              <div class="e-canvas-col">
+                <div class="e-canvas-section">
+                  <i class="fa fa-comment e-add-comment"></i>
+                  <h3>{{ evidence_3 }}</h3>
+                  <h4>{{ evidence_3_1 }}</h4>
+                  <textarea id="canvas-evidence" class="e-canvas-content m-display-none" name="evidence"></textarea>
+                  <div id="canvas-evidence-md" class="e-canvas-content-md"></div>
+                  <textarea id="canvas-evidence-comments" class="e-canvas-comment m-display-none" name="evidence_comments" placeholder="{{ comments }}"></textarea>
+                  <div id="canvas-evidence-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
+                </div>
+              </div>
+              <div class="e-canvas-col">
+                <div class="e-canvas-section">
+                  <i class="fa fa-comment e-add-comment"></i>
+                  <h3>{{ evidence_4 }}</h3>
+                  <h4>{{ evidence_4_1 }}</h4>
                   <textarea id="canvas-evidence" class="e-canvas-content m-display-none" name="evidence"></textarea>
                   <div id="canvas-evidence-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-evidence-comments" class="e-canvas-comment m-display-none" name="evidence_comments" placeholder="{{ comments }}"></textarea>
@@ -230,7 +277,7 @@
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
                   <h3>{{ proposition_1 }}</h3>
-                  <h4>{{ proposition_2 }}</h4>
+                  <h4>{{ proposition_1_1 }}</h4>
                   <textarea id="canvas-proposition" class="e-canvas-content m-display-none" name="proposition"></textarea>
                   <div id="canvas-proposition-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-proposition-comments" class="e-canvas-comment m-display-none" name="proposition_comments" placeholder="{{ comments }}"></textarea>
@@ -239,8 +286,8 @@
 
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ mechanism_1 }}</h3>
-                  <h4>{{ mechanism_2 }}</h4>
+                  <h3>{{ proposition_2 }}</h3>
+                  <h4>{{ proposition_2_1 }}</h4>
                   <textarea id="canvas-mechanism" class="e-canvas-content m-display-none" name="mechanism"></textarea>
                   <div id="canvas-mechanism-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-mechanism-comments" class="e-canvas-comment m-display-none" name="mechanism_comments" placeholder="{{ comments }}"></textarea>
@@ -251,8 +298,8 @@
               <div class="e-canvas-col">
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ metrics_1 }}</h3>
-                  <h4>{{ metrics_2 }}</h4>
+                  <h3>{{ mechanism_1 }}</h3>
+                  <h4>{{ mechanism_1_1 }}</h4>
                   <textarea id="canvas-metrics" class="e-canvas-content m-display-none" name="metrics"></textarea>
                   <div id="canvas-metrics-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-metrics-comments" class="e-canvas-comment m-display-none" name="metrics_comments" placeholder="{{ comments }}"></textarea>
@@ -262,8 +309,8 @@
               <div class="e-canvas-col">
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ supporters_1 }}</h3>
-                  <h4>{{ supporters_2 }}</h4>
+                  <h3>{{ mechanism_2 }}</h3>
+                  <h4>{{ mechanism_2_1 }}</h4>
                   <textarea id="canvas-supporters" class="e-canvas-content m-display-none" name="supporters"></textarea>
                   <div id="canvas-supporters-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-supporters-comments" class="e-canvas-comment m-display-none" name="supporters_comments" placeholder="{{ comments }}"></textarea>
@@ -272,8 +319,8 @@
 
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ foes_1 }}</h3>
-                  <h4>{{ foes_2 }}</h4>
+                  <h3>{{ metrics_1 }}</h3>
+                  <h4>{{ metrics_1_1}}</h4>
                   <textarea id="canvas-foes" class="e-canvas-content m-display-none" name="foes"></textarea>
                   <div id="canvas-foes-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-foes-comments" class="e-canvas-comment m-display-none" name="foes_comments" placeholder="{{ comments }}"></textarea>
@@ -281,6 +328,55 @@
                 </div>
               </div>
             </div>
+            <div class="e-canvas-line">
+              <div class="e-canvas-col">
+                <div class="e-canvas-section">
+                  <i class="fa fa-comment e-add-comment"></i>
+                  <h3>{{ metrics_2 }}</h3>
+                  <h4>{{ metrics_2_1 }}</h4>
+                  <textarea id="canvas-proposition" class="e-canvas-content m-display-none" name="proposition"></textarea>
+                  <div id="canvas-proposition-md" class="e-canvas-content-md"></div>
+                  <textarea id="canvas-proposition-comments" class="e-canvas-comment m-display-none" name="proposition_comments" placeholder="{{ comments }}"></textarea>
+                  <div id="canvas-proposition-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
+                </div>
+                
+
+                <div class="e-canvas-section">
+                  <i class="fa fa-comment e-add-comment"></i>
+                  <h3>{{ supporters_1 }}</h3>
+                  <h4>{{ supporters_1_1 }}</h4>
+                  <textarea id="canvas-mechanism" class="e-canvas-content m-display-none" name="mechanism"></textarea>
+                  <div id="canvas-mechanism-md" class="e-canvas-content-md"></div>
+                  <textarea id="canvas-mechanism-comments" class="e-canvas-comment m-display-none" name="mechanism_comments" placeholder="{{ comments }}"></textarea>
+                  <div id="canvas-mechanism-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
+                </div>
+              </div>
+              </div>
+              <div class="e-canvas-line">
+                <div class="e-canvas-col">
+                  <div class="e-canvas-section">
+                    <i class="fa fa-comment e-add-comment"></i>
+                    <h3>{{ supporters_2 }}</h3>
+                    <h4>{{ supporters_2_1 }}</h4>
+                    <textarea id="canvas-proposition" class="e-canvas-content m-display-none" name="proposition"></textarea>
+                    <div id="canvas-proposition-md" class="e-canvas-content-md"></div>
+                    <textarea id="canvas-proposition-comments" class="e-canvas-comment m-display-none" name="proposition_comments" placeholder="{{ comments }}"></textarea>
+                    <div id="canvas-proposition-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
+                  </div>
+                  
+  
+                  <div class="e-canvas-section">
+                    <i class="fa fa-comment e-add-comment"></i>
+                    <h3>{{ foes_1 }}</h3>
+                    <h4>{{ foes_1_1 }}</h4>
+                    <textarea id="canvas-mechanism" class="e-canvas-content m-display-none" name="mechanism"></textarea>
+                    <div id="canvas-mechanism-md" class="e-canvas-content-md"></div>
+                    <textarea id="canvas-mechanism-comments" class="e-canvas-comment m-display-none" name="mechanism_comments" placeholder="{{ comments }}"></textarea>
+                    <div id="canvas-mechanism-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
+                  </div>
+                </div>
+                </div>
+  
 
             <h2 class="e-group-title">{{ ideate }}</h2>
             <div class="e-canvas-line">
@@ -288,7 +384,7 @@
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
                   <h3>{{ ux_1 }}</h3>
-                  <h4>{{ ux_2 }}</h4>
+                  <h4>{{ ux_1_1 }}</h4>
                   <textarea id="canvas-ux" class="e-canvas-content m-display-none" name="ux"></textarea>
                   <div id="canvas-ux-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-ux-comments" class="e-canvas-comment m-display-none" name="ux_comments" placeholder="{{ comments }}"></textarea>
@@ -297,8 +393,8 @@
 
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ changes_1 }}</h3>
-                  <h4>{{ changes_2 }}</h4>
+                  <h3>{{ ux_2 }}</h3>
+                  <h4>{{ ux_2_1 }}</h4>
                   <textarea id="canvas-changes" class="e-canvas-content m-display-none" name="changes"></textarea>
                   <div id="canvas-changes-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-changes-comments" class="e-canvas-comment m-display-none" name="changes_comments" placeholder="{{ comments }}"></textarea>
@@ -309,63 +405,20 @@
               <div class="e-canvas-col">
                 <div class="e-canvas-section">
                   <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ partners_1 }}</h3>
-                  <h4>{{ partners_2 }}</h4>
+                  <h3>{{ changes_1 }}</h3>
+                  <h4>{{ changes_1_1 }}</h4>
                   <textarea id="canvas-partners" class="e-canvas-content m-display-none" name="partners"></textarea>
                   <div id="canvas-partners-md" class="e-canvas-content-md"></div>
                   <textarea id="canvas-partners-comments" class="e-canvas-comment m-display-none" name="partners_comments" placeholder="{{ comments }}"></textarea>
                   <div id="canvas-partners-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
                 </div>
 
-                <div class="e-canvas-section">
-                  <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ events_1 }}</h3>
-                  <h4>{{ events_2 }}</h4>
-                  <textarea id="canvas-events" class="e-canvas-content m-display-none" name="events"></textarea>
-                  <div id="canvas-events-md" class="e-canvas-content-md"></div>
-                  <textarea id="canvas-events-comments" class="e-canvas-comment m-display-none" name="events_comments" placeholder="{{ comments }}"></textarea>
-                  <div id="canvas-events-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
-                </div>
               </div>
             </div>
 
-            <div class="e-canvas-line">
-              <div class="e-canvas-col">
-                <div class="e-canvas-section">
-                  <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ field_1 }}</h3>
-                  <h4>{{ field_2 }}</h4>
-                  <textarea id="canvas-field" class="e-canvas-content m-display-none" name="field"></textarea>
-                  <div id="canvas-field-md" class="e-canvas-content-md"></div>
-                  <textarea id="canvas-field-comments" class="e-canvas-comment m-display-none" name="field_comments" placeholder="{{ comments }}"></textarea>
-                  <div id="canvas-field-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
-                </div>
-              </div>
-              <div class="e-canvas-col">
-                <div class="e-canvas-section">
-                  <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ approach_1 }}</h3>
-                  <h4>{{ approach_2 }}</h4>
-                  <textarea id="canvas-approach" class="e-canvas-content m-display-none" name="approach"></textarea>
-                  <div id="canvas-approach-md" class="e-canvas-content-md"></div>
-                  <textarea id="canvas-approach-comments" class="e-canvas-comment m-display-none" name="approach_comments" placeholder="{{ comments }}"></textarea>
-                  <div id="canvas-approach-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
-                </div>
-              </div>
-              <div class="e-canvas-col">
-                <div class="e-canvas-section">
-                  <i class="fa fa-comment e-add-comment"></i>
-                  <h3>{{ resources_1 }}</h3>
-                  <h4>{{ resources_2 }}</h4>
-                  <textarea id="canvas-resources" class="e-canvas-content m-display-none" name="resources"></textarea>
-                  <div id="canvas-resources-md" class="e-canvas-content-md"></div>
-                  <textarea id="canvas-resources-comments" class="e-canvas-comment m-display-none" name="resources_comments" placeholder="{{ comments }}"></textarea>
-                  <div id="canvas-resources-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
-                </div>
-              </div>
             </div>
 
-            <h2 class="e-group-title">{{ prototype_test }}</h2>
+            <!-- <h2 class="e-group-title">{{ prototype_test }}</h2>
             <div class="e-canvas-line">
               <div class="e-canvas-col">
                 <div class="e-canvas-section">
@@ -407,7 +460,7 @@
                   <div id="canvas-adoption-timestamp" class="e-canvas-timestamp m-display-none"><i class="e-action"></i><i class="e-timeago"></i></div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </section>
         </section>
       </main>
