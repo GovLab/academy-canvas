@@ -24,7 +24,7 @@ $(function() {
 
     $('body').html(template(language));
 
-    var firebase = getQuery('firebase') || 'lean-canvas';
+    var firebase = getQuery('firebase') || 'academy-canvas2020';
 
     if (!/^[A-Za-z0-9\-]+$/.test(firebase)) {
         throw new Error("INVALID FIREBASE: " + firebase);
