@@ -126,26 +126,27 @@ $(function() {
             doc.one_liner = '';
             doc.category = '';
 
-            set_data('ux');
-            set_data('foes');
-            set_data('risk');
-            set_data('costs');
-            set_data('field');
-            set_data('causes');
-            set_data('events');
-            set_data('changes');
-            set_data('metrics');
             set_data('problem');
-            set_data('adoption');
-            set_data('approach');
+            set_data('impact');
+            set_data('causes');
             set_data('evidence');
-            set_data('impacted');
-            set_data('mechanism');
+            set_data('idea');
+            set_data('change');
+            set_data('champions');
+            set_data('foes');
+            set_data('ux');
             set_data('partners');
+            set_data('collaborators');
+            set_data('events');
+            set_data('competitors');
+            set_data('gap');
             set_data('resources');
-            set_data('activities');
-            set_data('supporters');
-            set_data('proposition');
+            set_data('strategy');
+            set_data('cost');
+            set_data('ideate');
+            set_data('metrics');
+            set_data('risks');
+            set_data('adopt');
 
             db.child('canvas').child(id).set(doc);
 
@@ -491,26 +492,28 @@ function state2(db, id, object) {
 
         var url = location.pathname;
 
-        set_data('ux');
-        set_data('foes');
-        set_data('risk');
-        set_data('costs');
-        set_data('field');
-        set_data('causes');
-        set_data('events');
-        set_data('changes');
-        set_data('metrics');
         set_data('problem');
-        set_data('adoption');
-        set_data('approach');
+        set_data('impact');
+        set_data('causes');
         set_data('evidence');
-        set_data('impacted');
-        set_data('mechanism');
+        set_data('idea');
+        set_data('change');
+        set_data('champions');
+        set_data('foes');
+        set_data('ux');
         set_data('partners');
+        set_data('collaborators');
+        set_data('events');
+        set_data('competitors');
+        set_data('gap');
         set_data('resources');
-        set_data('activities');
-        set_data('supporters');
-        set_data('proposition');
+        set_data('strategy');
+        set_data('cost');
+        set_data('ideate');
+        set_data('metrics');
+        set_data('risks');
+        set_data('adopt');
+
 
         $('#canvas-category option').each(function() {
             if (obj.category == $(this).val()) {
