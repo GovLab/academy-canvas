@@ -143,11 +143,11 @@ $(function() {
             set_data('resources');
             set_data('strategy');
             set_data('cost');
+            set_data('ideate');
             set_data('metrics');
             set_data('risks');
             set_data('adopt');
-  
-
+    
 
             db.child('canvas').child(id).set(doc);
 
@@ -510,9 +510,11 @@ function state2(db, id, object) {
         set_data('resources');
         set_data('strategy');
         set_data('cost');
+        set_data('ideate');
         set_data('metrics');
         set_data('risks');
         set_data('adopt');
+
 
         $('#canvas-category option').each(function() {
             if (obj.category == $(this).val()) {
