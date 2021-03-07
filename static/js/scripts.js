@@ -158,8 +158,10 @@ $(function() {
 
         var id = slugy($(this).find('input').eq(0).val()),
             name = $(this).find('input').eq(0).val(),
-            pwd1 = $(this).find('input').eq(1).val(),
-            pwd2 = $(this).find('input').eq(2).val(),
+            pwd1 = "",
+            pwd2 = "",
+            // pwd1 = $(this).find('input').eq(1).val(),
+            // pwd2 = $(this).find('input').eq(2).val(),
             mail = id + '@example.com';
 
         if (pwd1 === pwd2) {
